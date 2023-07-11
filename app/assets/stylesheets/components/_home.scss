@@ -1,0 +1,46 @@
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: none;
+  width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+section {
+  height: 80vh;
+  border: 1px solid green;
+}
+
+.hero {
+  background-color: #d1dadc;
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  img {
+    position: absolute;
+    left: 10%;
+    height: 60vmin;
+    border: 1px solid blue;
+    bottom: 0;
+  }
+
+  & > p {
+    position: absolute;
+    top: 40vh;
+    right: 10%;
+  }
+
+  & > h1 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
