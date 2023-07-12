@@ -1,21 +1,53 @@
 <%= render "pages/navbar" %>
 
-<header class="hero">
-  <img src="https://res.cloudinary.com/dbbh9vabe/image/upload/v1689005148/vince2_re2leo.png" alt="vince">
+<div class="popup-nav"></div>
 
-  <p>Full stack | web dev</p>
+<div class="splash" data-controller="pageload" data-pageload-target="onLoad">
+  <h1 class="fade-in">Welcome to my Website!</h1>
+</div>
 
-  <h1>Voo Tzuen Hau | Vince --</h1>
-</header>
+<main class="wrapper">
+  <header class="hero">
+    <img class="background" src="https://res.cloudinary.com/dbbh9vabe/image/upload/v1689089781/background_yazmjd.jpg" alt="background grey">
+    <img class="foreground avatar" src="https://res.cloudinary.com/dbbh9vabe/image/upload/v1689086475/My_project_jwpikv.png" alt="vince">
 
-<main>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
+    <div class="title">
+      <div class="arrow">
+        <i class="fa-solid fa-arrow-trend-down"></i>
+      </div>
+      <p>Full stack | web dev</p>
+      <marquee width="60%" direction="left">Voo Tzuen Hau | Vince --</marquee>
+    </div>
+  </header>
+
+  <section class="about-wrapper">
+    <div class="about">
+      <h2 class="">About Me</h2>
+      <p>
+        With over a decade of nursing experience in diverse hospital settings across Singapore and Malaysia,
+        I recently completed a rigorous 9-week web development boot camp with Le Wagon,
+        equipping me with comprehensive technical skills. Proficient in HTML, CSS, JavaScript, and frameworks like Stimulus,
+        I bring a unique blend of empathy and technical excellence. I am actively working on personal projects to revolutionize
+        user experiences and seeking full-time opportunities in the tech industry where I can contribute my interdisciplinary expertise
+        and passion for creating impactful online solutions.
+      </p>
+    </div>
+    <div>
+      <%= render "pages/button" %>
+    </div>
+  </section>
+
+  <section>
+    <p>My Projects</p>
+    <p>SnapC | Etsy(clone)</p>
+  </section>
+
+  <section>
+    <p>Contact me</p>
+  </section>
 </main>
 
-<footer>
+<footer class="w-100">
   <ul class="d-flex justify-content-around">
     <li>git</li>
     <li>linked in</li>
