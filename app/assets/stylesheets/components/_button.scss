@@ -4,7 +4,7 @@ $hoverDuration: 0.3s;
 $easeIn: cubic-bezier(0.32, 0, 0.67, 0);
 $easeOut: cubic-bezier(0.33, 1, 0.68, 1);
 
-$textColor: #2b3338;
+$textColor: #113e21;
 
 .link {
   width: 10rem;
@@ -15,6 +15,7 @@ $textColor: #2b3338;
   letter-spacing: 0.1175em;
   word-spacing: 0.3em;
   text-decoration: none;
+  position: relative;
 
   &__svg {
     width: 100%;
@@ -25,6 +26,7 @@ $textColor: #2b3338;
     stroke-width: 0.05em;
     stroke-linecap: round;
     stroke-linejoin: round;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
   }
 
   &__cloud {
@@ -33,9 +35,9 @@ $textColor: #2b3338;
     fill: rgba(255, 255, 255, 0.15);
   }
 
-  &__face,
   &__arrow {
     transform-origin: 50% 50%;
+    transform: rotate(90deg);
     transition: transform $hoverDuration / 2 $easeIn;
 
     .link:hover & {
