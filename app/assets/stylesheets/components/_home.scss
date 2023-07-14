@@ -1,30 +1,3 @@
-nav {
-  position: fixed;
-  top: 0;
-  z-index: 9;
-  background: none;
-  width: 100%;
-  font-size: larger;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  width: 25%;
-  list-style-type: none;
-  margin-right: 10px;
-  a {
-    text-decoration: none;
-    color: #fff;
-    text-shadow: 2px 2px #000;
-  }
-}
-
-nav p {
-  color: #fff;
-  text-shadow: 2px 2px #000;
-}
-
 .splash {
   width: 100vw;
   height: 100vh;
@@ -110,7 +83,6 @@ section {
   font-size: 3vmin;
   color: #fff;
   width: 65vmin;
-  text-align: center;
 }
 
 marquee {
@@ -152,75 +124,6 @@ footer {
   letter-spacing: 0.2vmin;
 }
 
-// project preview
-
-.project {
-  height: 80vh;
-  h3 {
-    text-align: center;
-  }
-}
-
-.screen-wrapper {
-  display: flex;
-  height: 45%;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 10px;
-  margin: 5vmin;
-}
-
-.screen {
-  width: 30vmin;
-  height: 100%;
-  border: 3px solid #b38b59cc;
-  border-radius: 10px;
-  background-color: #f0f0f026;
-  position: relative;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  overflow: hidden;
-
-  .screen-overlay {
-    background: linear-gradient(
-      #b38b5926,
-      #b38b5926 3px,
-      transparent 3px,
-      transparent 9px
-    );
-    height: 100%;
-    width: 100%;
-    background-size: 100% 9px;
-    animation: pan-overlay 22s infinite linear;
-    position: absolute;
-    z-index: 2;
-    left: 0px;
-    top: 0px;
-  }
-
-  .image {
-    width: 100%;
-    height: 100%;
-    background-size: 200%;
-    filter: sepia(100%) hue-rotate(0deg);
-    opacity: 0.6;
-    animation: pan-image 15s linear infinite;
-    position: absolute;
-  }
-
-  .one {
-    background-image: url("https://res.cloudinary.com/dbbh9vabe/image/upload/v1689173199/Screenshot_2023-07-12_at_10.09.36_PM_smwztf.png");
-  }
-
-  .two {
-    background-image: url("https://res.cloudinary.com/dbbh9vabe/image/upload/v1689173199/Screenshot_2023-07-12_at_10.37.53_PM_etgicr.png");
-  }
-}
-
-.top {
-  margin-left: 0;
-}
-
 // logos section
 
 .logos {
@@ -232,8 +135,60 @@ footer {
     width: 8vmin;
     aspect-ratio: 4/3;
     object-fit: contain;
-    mix-blend-mode: color-burn;
   }
+}
+
+// upcoming projects
+
+.upcoming-projects {
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+  padding: 4vmin;
+}
+
+.upcoming {
+  width: 50vmin;
+  height: 40vmin;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5px;
+  padding: 0.4em;
+}
+
+.upcoming p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.5s;
+  border: 1px solid #113e21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.upcoming p:hover {
+  flex: 4;
+}
+
+.upcoming p span {
+  min-width: 14em;
+  padding: 0.5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+  text-transform: uppercase;
+  color: #b38b59;
+  letter-spacing: 0.1em;
+}
+
+.upcoming p:hover span {
+  transform: rotate(0);
 }
 
 // footer
@@ -242,16 +197,25 @@ footer {
   background-image: url("https://res.cloudinary.com/dbbh9vabe/image/upload/v1689265375/milad-fakurian-RVM5HYqg2jA-unsplash_ipcs2y.jpg");
   background-position: right;
   position: relative;
-  p {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  h3,
+  h4 {
     color: #fff;
+    padding: 3vmin;
+    font-size: 3vmin;
   }
 }
 
 .links {
+  display: flex;
+  justify-content: space-around;
   list-style-type: none;
   position: absolute;
   width: 100%;
   bottom: 0;
+  padding: 10px;
 
   a {
     text-decoration: none;

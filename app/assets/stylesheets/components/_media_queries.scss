@@ -1,0 +1,99 @@
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 100vmin;
+    top: -10vmin;
+    .background {
+      height: 150%;
+    }
+
+    img.avatar {
+      height: 80vmin;
+    }
+  }
+
+  .title > p {
+    top: 30vmin;
+  }
+
+  .arrow {
+    top: 20vmin;
+    left: 10%;
+  }
+
+  section {
+    height: 60vh;
+  }
+
+  .wrapper .about {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30vmin;
+  }
+
+  .about-wrapper {
+    display: block;
+  }
+
+  .link__svg {
+    display: none;
+  }
+
+  .logos-container {
+    background-color: white;
+    position: absolute;
+    top: 230vmin;
+  }
+
+  .screen-wrapper {
+    display: block;
+    height: 35vmin;
+  }
+
+  .screen {
+    width: 90vmin;
+    height: 60vmin;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .upcoming-projects {
+    height: 30vh;
+  }
+
+  .project {
+    height: 120vh;
+    background-color: #fff;
+  }
+
+  .upcoming {
+    width: 80vmin;
+  }
+
+  .about-snapc {
+    position: absolute;
+    top: 37vmin;
+  }
+
+  .top {
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+
+  .bottom {
+    position: absolute;
+    top: 80vmin;
+    right: 24px;
+  }
+
+  .about-etsy {
+    top: 120vmin;
+    position: absolute;
+  }
+
+  .footer {
+    height: 20%;
+  }
+}
