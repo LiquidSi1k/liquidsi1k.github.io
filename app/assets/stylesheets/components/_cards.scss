@@ -4,6 +4,7 @@
   height: 100vh;
   padding-bottom: 8vmin;
   padding-top: 3vmin;
+  margin: 20px 0;
   h3 {
     text-align: center;
   }
@@ -64,6 +65,11 @@
 
 .top {
   margin-left: 0;
+  width: 30%;
+}
+
+.bottom {
+  width: 30%;
 }
 
 // hover effect
