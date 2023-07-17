@@ -6,6 +6,14 @@ export default class extends Controller {
 
   connect() {
     console.log("navbar JS connected");
+
+    this.element.addEventListener("mousedown", this.handleMouseDown.bind(this));
+  }
+
+  handleMouseDown(event) {
+    event.preventDefault();
+
+    console.log("drag function pending");
   }
 
   popup() {

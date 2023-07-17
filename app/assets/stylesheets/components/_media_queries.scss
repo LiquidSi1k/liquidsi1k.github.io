@@ -13,6 +13,7 @@
   .title > p {
     top: 20vmin;
     right: 0;
+    font-size: larger;
   }
 
   .arrow {
@@ -26,6 +27,7 @@
 
   .about {
     width: 100%;
+    margin: 8vmin 0;
   }
 
   marquee {
@@ -37,10 +39,11 @@
     position: absolute;
     top: 40vmin;
     right: 0;
+    font-size: larger;
   }
 
   .project {
-    height: 150vh;
+    height: 280vh;
     width: 90%;
   }
 
@@ -62,6 +65,13 @@
     width: 100%;
     margin-bottom: 10px;
   }
+
+  .wrapper-top {
+    height: 55%;
+  }
+  .wrapper-bottom {
+    height: 45%;
+  }
 }
 
 // end of phone screen
@@ -74,7 +84,7 @@
   }
 
   .project {
-    height: 150vh;
+    height: 170vh;
   }
 
   .navbar {
@@ -118,6 +128,12 @@
 
   .arrow {
     top: 10vmin;
-    left: 30vmin;
+    left: 20vmin;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  body {
+    font-size: clamp(16px, calc(-40.8896px + 92.592px * 100vw / 1600), 48px);
   }
 }

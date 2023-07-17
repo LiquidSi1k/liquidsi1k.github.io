@@ -6,6 +6,19 @@
   }
 }
 
+// download btn
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateReverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 // cards
 
 @keyframes pan-image {
