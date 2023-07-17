@@ -75,6 +75,11 @@ section {
     left: 0;
     filter: drop-shadow(0 0 0.2rem black);
   }
+
+  .name {
+    color: #f0f0f0;
+    display: none;
+  }
 }
 
 .title > p {
