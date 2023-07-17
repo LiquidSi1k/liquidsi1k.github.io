@@ -62,7 +62,7 @@ section {
   .background {
     transform: translateZ(-10px) scale(2);
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
   }
 
   .foreground {
@@ -75,6 +75,7 @@ section {
     height: 80%;
     left: 0;
     filter: drop-shadow(0 0 0.2rem black);
+    object-fit: contain;
   }
 
   .name {
