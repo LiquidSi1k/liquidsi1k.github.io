@@ -66,7 +66,7 @@
 
 // end of phone screen
 
-@media only screen and (min-width: 600px) and (max-width: 700px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   .top,
   .bottom {
     margin: 10px;
@@ -76,9 +76,13 @@
   .project {
     height: 150vh;
   }
+
+  .navbar {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .download-btn {
     display: none;
   }
@@ -88,6 +92,32 @@
   }
 
   .screen-wrapper {
-    margin: 0;
+    margin-left: 5vmin;
+  }
+
+  .title > p {
+    top: 10vmin;
+    right: 0;
+  }
+
+  .arrow {
+    top: 10vmin;
+    left: 10vmin;
+  }
+
+  .popup-nav {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .title > p {
+    top: 10vmin;
+    right: 0;
+  }
+
+  .arrow {
+    top: 10vmin;
+    left: 30vmin;
   }
 }

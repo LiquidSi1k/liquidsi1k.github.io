@@ -66,6 +66,10 @@ $textColor: #113e21;
   }
 }
 
+.download-btn:hover {
+  filter: drop-shadow(0 0 0.75rem #f0f0f0);
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);
