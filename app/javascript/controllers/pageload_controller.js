@@ -9,6 +9,6 @@ export default class extends Controller {
 
     setTimeout(() => {
       this.onLoadTarget.classList.add("afterload");
-    }, 2000);
+    }, 1000);
   }
 }
